@@ -1,6 +1,7 @@
 // Contenu 100% français — Illiko Design
 
-const imagePath = (name) => `${process.env.PUBLIC_URL || ""}/images/${name}`;
+const imagePath = (name) =>
+  `${process.env.PUBLIC_URL || ""}/images/${typeof name === "string" ? name : ""}`;
 
 export const IMAGES = {
   hero: imagePath("hero.svg"),

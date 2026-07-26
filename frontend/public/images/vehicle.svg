@@ -8,6 +8,6 @@
   <rect width="1600" height="1000" fill="url(#bg-vehicle)"/>
   <circle cx="1250" cy="200" r="180" fill="#f59e0b" fill-opacity="0.35"/>
   <circle cx="350" cy="760" r="220" fill="#fde68a" fill-opacity="0.2"/>
-  <text x="120" y="470" fill="#f8fafc" font-family="Arial, sans-serif" font-size="92" font-weight="700">Illiko Design</text>
-  <text x="120" y="565" fill="#facc15" font-family="Arial, sans-serif" font-size="56">vehicle</text>
+  <text aria-hidden="true" x="120" y="470" fill="#f8fafc" font-family="Arial, sans-serif" font-size="92" font-weight="700">Illiko Design</text>
+  <text aria-hidden="true" x="120" y="565" fill="#facc15" font-family="Arial, sans-serif" font-size="56">vehicle</text>
 </svg>
