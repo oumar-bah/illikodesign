@@ -1,0 +1,215 @@
+{
+  "project_name": "Illiko Design",
+  "language": "fr",
+  "theme": "dark",
+  "art_direction": "Luxurious Black, Gold, and White. Premium, authoritative, artistic. Awwwards Site-of-the-Day level.",
+  "typography": {
+    "fonts": {
+      "heading": "Playfair Display, serif",
+      "body": "Manrope, sans-serif",
+      "accent": "Cinzel, serif"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-none",
+      "h2": "text-4xl md:text-5xl lg:text-6xl tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl tracking-tight",
+      "h4": "text-xl md:text-2xl",
+      "body_lg": "text-lg md:text-xl leading-relaxed",
+      "body": "text-base leading-relaxed tracking-wide",
+      "overline": "text-xs md:text-sm uppercase tracking-[0.3em] font-semibold"
+    },
+    "imports": "@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');"
+  },
+  "colors": {
+    "background": "#050505",
+    "surface": "#0a0a0a",
+    "surface_elevated": "#141414",
+    "foreground": "#F8F8F8",
+    "muted": "#A1A1AA",
+    "gold": {
+      "light": "#F3E5AB",
+      "DEFAULT": "#D4AF37",
+      "dark": "#997A15"
+    },
+    "borders": "#27272a",
+    "gradients": {
+      "gold_text": "bg-clip-text text-transparent bg-gradient-to-r from-[#BF953F] via-[#FCF6BA] to-[#B38728]",
+      "gold_surface": "bg-gradient-to-br from-[#BF953F]/10 via-transparent to-[#B38728]/10",
+      "black_fade": "bg-gradient-to-t from-[#050505] to-transparent"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-black/40 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+    "noise_texture": "Add a fixed full-screen div with a subtle SVG noise filter to kill digital flatness.",
+    "hover_effects": "Optical clarity. Borders glow subtly with gold on hover, image containers scale slightly (1.05) with 0.6s ease-out.",
+    "shadows": {
+      "gold_glow": "drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]"
+    }
+  },
+  "grids_and_layouts": {
+    "spacing_scale": "Generous. Use py-24 or py-32 for section vertical padding. gap-8 to gap-16 for grids.",
+    "bento_grid": "For services: grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6. Mix spans (e.g., col-span-4 row-span-2, col-span-8 row-span-1) to create asymmetry.",
+    "container": "max-w-[1400px] mx-auto px-6 md:px-12",
+    "alignment": "Left-align headings for editorial tension. Never center everything."
+  },
+  "components": {
+    "buttons": {
+      "primary": "Pill-shaped or sharp rectangular. bg-[#D4AF37] text-black font-semibold hover:bg-[#F3E5AB] transition-colors duration-300 px-8 py-4",
+      "outline": "Border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 px-8 py-4 backdrop-blur-sm"
+    },
+    "cards": "Raw HTML/Tailwind divs. bg-surface_elevated border border-white/5 hover:border-[#D4AF37]/50 transition-colors p-8. No Shadcn default cards for marketing sections.",
+    "inputs": "Shadcn input/textarea but heavily customized: bg-transparent border-b border-white/20 rounded-none focus-visible:ring-0 focus-visible:border-[#D4AF37] px-0 text-lg placeholder:text-muted transition-colors. Do not use standard boxes.",
+    "accordion": "Shadcn accordion. Border-b only. Title text-2xl font-serif. Hover text-gold."
+  },
+  "motion": {
+    "libraries": [
+      "framer-motion",
+      "@studio-freight/react-lenis",
+      "react-fast-marquee"
+    ],
+    "patterns": {
+      "hero_reveal": "Masked line-by-line reveal for H1. Staggered fade up for subtitle and CTA.",
+      "scroll_reveal": "whileInView={{ y: 0, opacity: 1 }} initial={{ y: 40, opacity: 0 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}",
+      "parallax": "Use framer-motion useScroll and useTransform for subtle image y-axis shift.",
+      "momentum_scroll": "Wrap the app in Lenis root for buttery smooth momentum scrolling."
+    }
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Accueil",
+      "layout": "100vh height. Absolute background image with bg-black/60 overlay. Content aligned bottom-left or centered with massive kinetic typography.",
+      "elements": [
+        "Gold Overline: 'L\\'EXCELLENCE EN IMPRESSION'",
+        "H1: 'Illiko Design.' (Line by line reveal)",
+        "Subtitle: 'Votre vision, notre précision. Imprimerie haute couture et communication visuelle.'",
+        "CTA Buttons: 'Demander un devis' (Primary), 'Nos Réalisations' (Outline)"
+      ]
+    },
+    {
+      "id": "about",
+      "name": "À propos",
+      "layout": "Grid 12 cols. Left 4 cols: Sticky manifesto chapter title '01. Notre Vision'. Right 8 cols: Massive typographic statement.",
+      "elements": [
+        "Text: 'Nous ne faisons pas qu\\'imprimer. Nous donnons vie à vos ambitions avec un savoir-faire artisanal et une technologie de pointe.'",
+        "Signature on-load or scroll-triggered fade in."
+      ]
+    },
+    {
+      "id": "services",
+      "name": "Nos Services",
+      "layout": "Asymmetric Bento Grid. Dark surfaces, gold hover borders.",
+      "elements": [
+        "Categories to include: Enseignes 3D & Lumineuses, Marquage Véhicule, Imprimerie Grand Format, Goodies & Objets Publicitaires, Textile Personnalisé, Papeterie de Luxe.",
+        "Icons: use lucide-react (e.g., Printer, Box, Car, PenTool, Gem)."
+      ]
+    },
+    {
+      "id": "portfolio",
+      "name": "Nos Réalisations",
+      "layout": "Masonry or staggered grid of clipped frames. Images zoom on hover. Very minimal text, let the work breathe.",
+      "elements": [
+        "Real product photography treated deliberately with spot-lighting feel."
+      ]
+    },
+    {
+      "id": "why-us",
+      "name": "Pourquoi nous choisir",
+      "layout": "Horizontal layout with huge numbers. Animated statistics counters using framer-motion.",
+      "elements": [
+        "Stats: '+10 Ans d\\'expertise', '500+ Clients satisfaits', '100% Qualité Premium'"
+      ]
+    },
+    {
+      "id": "testimonials",
+      "name": "Témoignages",
+      "layout": "Full width marquee (react-fast-marquee). Slow editorial ribbon.",
+      "elements": [
+        "Elegant typography. Pale gold text on deep black background."
+      ]
+    },
+    {
+      "id": "quote",
+      "name": "Demande de devis",
+      "layout": "2-column layout. Left: Evocative image or bold text. Right: High-end minimalist form.",
+      "elements": [
+        "Fields (French): Nom, Entreprise, Téléphone, Email, Service souhaité (Select), Description du projet (Textarea), Téléversement de fichier (File input).",
+        "JUSTE UN FORMULAIRE DE CONTACT SANS PARAMETRAGE SENDGRID."
+      ]
+    },
+    {
+      "id": "faq",
+      "name": "FAQ",
+      "layout": "Narrow container centered (max-w-3xl). Shadcn Accordion.",
+      "elements": [
+        "Questions in French regarding turnaround times, material quality, delivery, etc."
+      ]
+    },
+    {
+      "id": "contact",
+      "name": "Contact",
+      "layout": "Grid layout. Dark map mockup or embedded iframe. Fictional luxury address in Paris or Dakar.",
+      "elements": [
+        "Contact info, floating WhatsApp button (fixed bottom-right), Social Media links."
+      ]
+    }
+  ],
+  "images": {
+    "hero": {
+      "url": "https://images.pexels.com/photos/3872380/pexels-photo-3872380.jpeg",
+      "description": "African American employee in print shop, represents the modern printing workshop with elegant professionals."
+    },
+    "services_vehicle": {
+      "url": "https://images.unsplash.com/photo-1638701096552-9f0dbf98c7e9",
+      "description": "Orange van driving down a street, for vehicle branding mockup."
+    },
+    "services_business_cards": {
+      "url": "https://images.unsplash.com/photo-1782857690704-c4341b240487",
+      "description": "Dark luxury business cards."
+    },
+    "services_3d_signs": {
+      "url": "https://images.unsplash.com/photo-1496449903678-68ddcb189a24",
+      "description": "Neon signage 'This is the sign you've been looking for'."
+    },
+    "services_apparel": {
+      "url": "https://images.unsplash.com/photo-1604508230015-5a54faf1fa56",
+      "description": "Black and white crew neck t-shirt for custom apparel."
+    },
+    "portfolio_1": {
+      "url": "https://images.pexels.com/photos/6620963/pexels-photo-6620963.jpeg",
+      "description": "Detailed view of a professional printing press setup."
+    }
+  },
+  "accessibility": {
+    "guidelines": [
+      "All interactive elements MUST have data-testid attributes (e.g., data-testid='submit-quote-btn').",
+      "Ensure minimum contrast ratio (APCA). Use text-shadow if placing text over images.",
+      "Support prefers-reduced-motion for framer-motion animations."
+    ]
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: Do NOT use Inter, Roboto, or generic sans-serif for headings. Stick to Playfair Display or Cinzel.",
+    "CRITICAL: 100% French content. DO NOT use English placeholders.",
+    "CRITICAL: No Shadcn default styled Cards. Build raw custom HTML/Tailwind for artistic marketing sections.",
+    "CRITICAL: Do NOT use a fully transparent background on the sticky nav. Use backdrop-blur with bg-black/70.",
+    "Integrate @studio-freight/react-lenis for smooth scrolling at the root App level.",
+    "Forms must use Shadcn components but stripped of Vercel/Bootstrap look. Use border-bottom only for inputs (minimalist editorial look).",
+    "Only use the exact color palette (Black, Gold, White). Do not inject random colors."
+  ],
+  "universal_guidelines_for_main_agent": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid the 'AI slop' aesthetic. Make creative, distinctive frontends.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g., transition: all). Add transitions for specific properties.",
+    "You MUST NOT center align the app container (.App { text-align: center; }).",
+    "Always use modern button styles (pill-shaped or sharp).",
+    "NEVER use emoji characters (🤖🧠) for icons. Use lucide-react.",
+    "Every interaction needs micro-animations (hover states).",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures and noise overlays separate good from extraordinary.",
+    "Prioritize using pre-existing components from src/components/ui.",
+    "All interactive elements MUST include a data-testid attribute."
+  ]
+}
