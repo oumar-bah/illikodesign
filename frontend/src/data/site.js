@@ -24,11 +24,11 @@ export const NAV_LINKS = [
 ];
 
 export const CONTACT = {
-  phone: "+221 77 000 00 00",
-  phoneHref: "tel:+221770000000",
-  whatsapp: "https://wa.me/221770000000",
-  email: "contact@illikodesign.com",
-  address: "Rue 12, Immeuble Prestige, Almadies — Dakar, Sénégal",
+  phone: "+224 611 10 01 60",
+  phoneHref: "tel:+224 611 10 01 60",
+  whatsapp: "https://web.whatsapp.com/",
+  email: "Designilliko.com",
+  address: "Hamdanllaye- carrefour",
   hours: "Lun — Sam · 08h30 à 19h00",
   mapEmbed:
     "https://www.google.com/maps?q=Almadies+Dakar+Senegal&output=embed",
