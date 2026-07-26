@@ -2,7 +2,7 @@
 
 const imagePath = (name) => {
   if (typeof name !== "string" || name.length === 0) {
-    throw new Error("Invalid image asset name");
+    throw new Error("Image asset name must be a non-empty string");
   }
   return `${process.env.PUBLIC_URL || ""}/images/${name}`;
 };
