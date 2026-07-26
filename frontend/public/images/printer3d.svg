@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040408"/>
+      <stop offset="100%" stop-color="#060608"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BF953F"/>
+      <stop offset="50%" stop-color="#FCF6BA"/>
+      <stop offset="100%" stop-color="#B38728"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a20"/>
+      <stop offset="100%" stop-color="#0d0d12"/>
+    </linearGradient>
+    <radialGradient id="hot-tip" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF6600" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FF3300" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <!-- 3D Printer frame - cubic structure -->
+  <!-- Frame verticals -->
+  <rect x="280" y="160" width="16" height="480" fill="url(#frame)" stroke="url(#gold)" stroke-width="1.5"/>
+  <rect x="904" y="160" width="16" height="480" fill="url(#frame)" stroke="url(#gold)" stroke-width="1.5"/>
+  <rect x="280" y="160" width="640" height="16" fill="url(#frame)" stroke="url(#gold)" stroke-width="1.5"/>
+  <rect x="280" y="624" width="640" height="16" fill="url(#frame)" stroke="url(#gold)" stroke-width="1.5"/>
+  <!-- Top cross beams -->
+  <rect x="280" y="240" width="640" height="10" fill="url(#frame)" stroke="#2a2a2a" stroke-width="1"/>
+  <!-- Build platform -->
+  <rect x="340" y="540" width="520" height="16" rx="2" fill="#1a1a20" stroke="url(#gold)" stroke-width="1"/>
+  <!-- 3D object being printed (vase-like shape) -->
+  <!-- Layers of printed object -->
+  <g fill="#0f0f14" stroke="url(#gold)" stroke-width="0.8">
+    <ellipse cx="600" cy="540" rx="80" ry="8" fill="url(#gold)" fill-opacity="0.4"/>
+    <rect x="540" y="490" width="120" height="50" rx="2"/>
+    <rect x="548" y="440" width="104" height="50" rx="2"/>
+    <rect x="560" y="390" width="80" height="50" rx="2"/>
+    <rect x="570" y="340" width="60" height="50" rx="2"/>
+    <ellipse cx="600" cy="335" rx="30" ry="8"/>
+  </g>
+  <!-- Print head with hot tip -->
+  <rect x="540" y="250" width="120" height="60" rx="4" fill="#1f1f24" stroke="url(#gold)" stroke-width="1.5"/>
+  <circle cx="600" cy="310" r="8" fill="url(#hot-tip)"/>
+  <!-- Filament line -->
+  <path d="M600,170 Q630,200 620,250 Q610,270 600,310" fill="none" stroke="url(#gold)" stroke-width="2" stroke-opacity="0.5"/>
+  <!-- Control panel -->
+  <rect x="350" y="170" width="100" height="50" rx="4" fill="#111116" stroke="#2a2a30" stroke-width="1"/>
+  <circle cx="380" cy="195" r="8" fill="#00CC44" fill-opacity="0.8"/>
+  <rect x="400" y="186" width="35" height="18" rx="2" fill="#0d0d12" stroke="url(#gold)" stroke-width="0.5"/>
+  <!-- Label -->
+  <text x="600" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#D4AF37" fill-opacity="0.5" letter-spacing="5">IMPRESSION 3D PROFESSIONNELLE · PROTOTYPAGE</text>
+</svg>

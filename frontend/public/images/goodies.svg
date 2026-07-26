@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BF953F"/>
+      <stop offset="50%" stop-color="#FCF6BA"/>
+      <stop offset="100%" stop-color="#B38728"/>
+    </linearGradient>
+    <linearGradient id="mug" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15100a"/>
+      <stop offset="100%" stop-color="#0d0a07"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <!-- Gift box -->
+  <rect x="620" y="350" width="280" height="220" rx="4" fill="url(#box)" stroke="url(#gold)" stroke-width="1.5"/>
+  <!-- Box lid -->
+  <rect x="606" y="310" width="308" height="50" rx="4" fill="url(#box)" stroke="url(#gold)" stroke-width="1.5"/>
+  <!-- Ribbon vertical -->
+  <rect x="748" y="310" width="20" height="260" fill="url(#gold)" fill-opacity="0.4"/>
+  <!-- Ribbon horizontal -->
+  <rect x="620" y="330" width="280" height="16" fill="url(#gold)" fill-opacity="0.4"/>
+  <!-- Ribbon bow -->
+  <path d="M758,310 Q720,270 700,300 Q700,320 758,320 Z" fill="url(#gold)" fill-opacity="0.6"/>
+  <path d="M758,310 Q796,270 816,300 Q816,320 758,320 Z" fill="url(#gold)" fill-opacity="0.6"/>
+  <!-- Mug -->
+  <path d="M300,350 Q290,360 290,460 Q290,500 340,500 L440,500 Q490,500 490,460 Q490,360 480,350 Z" fill="url(#mug)" stroke="#2a2a2a" stroke-width="2"/>
+  <!-- Mug handle -->
+  <path d="M490,380 Q540,380 540,420 Q540,460 490,460" fill="none" stroke="#2a2a2a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M490,380 Q530,380 530,420 Q530,460 490,460" fill="none" stroke="url(#gold)" stroke-width="1.5"/>
+  <!-- Mug logo -->
+  <text x="390" y="435" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-style="italic" fill="url(#gold)" fill-opacity="0.9">ID</text>
+  <!-- Mug base -->
+  <ellipse cx="390" cy="500" rx="55" ry="8" fill="#1a1a1a"/>
+  <!-- Badge/pin -->
+  <circle cx="900" cy="420" r="55" fill="url(#mug)" stroke="url(#gold)" stroke-width="2"/>
+  <circle cx="900" cy="420" r="42" fill="none" stroke="url(#gold)" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="900" y="425" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-style="italic" fill="url(#gold)">Illiko</text>
+  <!-- Label -->
+  <text x="600" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#D4AF37" fill-opacity="0.5" letter-spacing="5">GOODIES · OBJETS PUBLICITAIRES · PACKAGING</text>
+</svg>

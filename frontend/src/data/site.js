@@ -1,16 +1,16 @@
 // Contenu 100% français — Illiko Design
 
 export const IMAGES = {
-  hero: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/d9cef2971e8f6e76a60d34a082904293b2af7c055c03c87a4b152aba29c9861b.jpeg",
-  signs3d: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/d57f5738061b791d66b3fb2aab6ec6cd39ef920322a659786c9fb4bcf3784ee0.jpeg",
-  vehicle: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/2907d2a9b58f0a7b7f63399567a37c661d9795c34abd8e6e6770658866c14255.jpeg",
-  largeFormat: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/1f567cea018dc3a9c0ab9193edc3cf1633f5d45d72950a33ff50b4b6f761075d.jpeg",
-  apparel: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/5589de31173eafa4f1eb4ff124dd3358a66ec03608234b0b475df7583cf5696e.jpeg",
-  stationery: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/afa44d21a2154fbf473fab7ee7f80ccbfa27b3ead13706d4e85aa9d0733e2c19.jpeg",
-  goodies: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/297d8cc979472652fe81c7e172945f86c94ea8aa816fd1c7a73f13340a0695d8.jpeg",
-  printer3d: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/604e433f4d27e110da7ae9a35d2a6544be6c3d0d1e3b1298903daa5e149b8e3b.jpeg",
-  acrylic: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/d573de692fa8455dba5439c95d5d4a5f5d100442f7be181eacff4dffa59c61a7.jpeg",
-  atelier: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/0ff80cc7e90b0836479ba53e07111f483b21dbc246c2df153fca5c41d37df31d.jpeg",
+  hero: "/images/hero.svg",
+  signs3d: "/images/signs3d.svg",
+  vehicle: "/images/vehicle.svg",
+  largeFormat: "/images/largeFormat.svg",
+  apparel: "/images/apparel.svg",
+  stationery: "/images/stationery.svg",
+  goodies: "/images/goodies.svg",
+  printer3d: "/images/printer3d.svg",
+  acrylic: "/images/acrylic.svg",
+  atelier: "/images/atelier.svg",
 };
 
 export const NAV_LINKS = [

@@ -32,6 +32,7 @@ export const Portfolio = () => (
             <img
               src={item.image}
               alt={item.title}
+              loading="lazy"
               className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-500" />

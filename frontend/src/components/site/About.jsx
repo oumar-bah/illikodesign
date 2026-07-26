@@ -29,6 +29,7 @@ export const About = () => (
               <img
                 src={IMAGES.atelier}
                 alt="Atelier Illiko Design"
+                loading="lazy"
                 className="w-full aspect-[4/5] object-cover grayscale-[15%] hover:grayscale-0 transition-all duration-700"
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-gold/20" />

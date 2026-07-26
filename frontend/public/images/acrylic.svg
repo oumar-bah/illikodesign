@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BF953F"/>
+      <stop offset="50%" stop-color="#FCF6BA"/>
+      <stop offset="100%" stop-color="#B38728"/>
+    </linearGradient>
+    <linearGradient id="acrylic-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1220" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#080d16" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glass-glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <linearGradient id="edge-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4080FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#60A0FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4080FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <!-- Acrylic sign panel - portrait -->
+  <!-- Shadow -->
+  <rect x="345" y="175" width="510" height="450" rx="4" fill="#030303"/>
+  <!-- Main acrylic panel -->
+  <rect x="335" y="165" width="530" height="450" rx="4" fill="url(#acrylic-panel)" stroke="#1a2a4a" stroke-width="2"/>
+  <!-- Edge-lit effect (blue LED edge) -->
+  <rect x="335" y="165" width="530" height="4" rx="2" fill="url(#edge-light)" filter="url(#glass-glow)"/>
+  <rect x="335" y="165" width="4" height="450" rx="2" fill="url(#edge-light)" filter="url(#glass-glow)"/>
+  <!-- Reflective shine line on acrylic -->
+  <path d="M350,175 L380,175 L370,300 L340,300 Z" fill="white" fill-opacity="0.03"/>
+  <!-- Content on the acrylic sign -->
+  <!-- Logo mark -->
+  <g transform="translate(600, 310)" filter="url(#glass-glow)">
+    <polygon points="0,-60 52,30 -52,30" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+    <polygon points="0,-40 34,20 -34,20" fill="none" stroke="url(#gold)" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="0" cy="-2" r="10" fill="url(#gold)"/>
+  </g>
+  <text x="600" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="url(#gold)">ILLIKO</text>
+  <text x="600" y="428" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="url(#gold)" fill-opacity="0.7" letter-spacing="8">DESIGN</text>
+  <!-- Divider -->
+  <line x1="430" y1="450" x2="770" y2="450" stroke="url(#gold)" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="600" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#D4AF37" fill-opacity="0.5" letter-spacing="4">IMPRIMERIE · COMMUNICATION VISUELLE</text>
+  <!-- Mounting screws -->
+  <circle cx="370" cy="195" r="6" fill="#1a1a1a" stroke="url(#gold)" stroke-width="1"/>
+  <circle cx="830" cy="195" r="6" fill="#1a1a1a" stroke="url(#gold)" stroke-width="1"/>
+  <circle cx="370" cy="595" r="6" fill="#1a1a1a" stroke="url(#gold)" stroke-width="1"/>
+  <circle cx="830" cy="595" r="6" fill="#1a1a1a" stroke="url(#gold)" stroke-width="1"/>
+  <!-- Label -->
+  <text x="600" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#D4AF37" fill-opacity="0.5" letter-spacing="5">PLAQUES ACRYLIQUES · DÉCOUPE LASER · SIGNALÉTIQUE</text>
+</svg>
