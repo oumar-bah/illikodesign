@@ -7,12 +7,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Manrope', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+        cinzel: ['Cinzel', 'serif'],
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
       },
       colors: {
+        gold: {
+          light: '#F3E5AB',
+          DEFAULT: '#D4AF37',
+          dark: '#997A15',
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
