@@ -17,6 +17,7 @@ const ServiceCard = ({ cat, index }) => {
         <img
           src={cat.image}
           alt={cat.title}
+          loading="lazy"
           className="h-full w-full object-cover opacity-30 group-hover:opacity-45 group-hover:scale-105 transition-all duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/85 to-transparent" />

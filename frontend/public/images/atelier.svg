@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060504"/>
+      <stop offset="100%" stop-color="#090807"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BF953F"/>
+      <stop offset="50%" stop-color="#FCF6BA"/>
+      <stop offset="100%" stop-color="#B38728"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0908"/>
+      <stop offset="100%" stop-color="#050504"/>
+    </linearGradient>
+    <radialGradient id="lamp-light" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#FFD080" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#050504" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d0b0a"/>
+      <stop offset="100%" stop-color="#080706"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <!-- Back wall -->
+  <rect x="0" y="0" width="1200" height="620" fill="url(#wall)"/>
+  <!-- Floor perspective -->
+  <path d="M0,620 L0,800 L1200,800 L1200,620 Z" fill="url(#floor)"/>
+  <!-- Floor planks -->
+  <g stroke="#0f0e0d" stroke-width="1">
+    <line x1="0" y1="660" x2="1200" y2="660"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+    <line x1="0" y1="740" x2="1200" y2="740"/>
+    <line x1="0" y1="780" x2="1200" y2="780"/>
+    <line x1="300" y1="620" x2="200" y2="800"/>
+    <line x1="600" y1="620" x2="600" y2="800"/>
+    <line x1="900" y1="620" x2="1000" y2="800"/>
+  </g>
+  <!-- Lamp light from ceiling -->
+  <ellipse cx="600" cy="0" rx="500" ry="450" fill="url(#lamp-light)"/>
+  <!-- Pendant lamp -->
+  <line x1="600" y1="0" x2="600" y2="80" stroke="#2a2a2a" stroke-width="3"/>
+  <ellipse cx="600" cy="90" rx="30" ry="12" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <circle cx="600" cy="88" r="8" fill="#FFD080" fill-opacity="0.9"/>
+  <!-- Large work table -->
+  <rect x="150" y="450" width="900" height="30" rx="3" fill="#1a1510" stroke="#2a2015" stroke-width="1.5"/>
+  <rect x="150" y="480" width="10" height="140" fill="#151210"/>
+  <rect x="1040" y="480" width="10" height="140" fill="#151210"/>
+  <rect x="250" y="480" width="10" height="140" fill="#151210"/>
+  <rect x="940" y="480" width="10" height="140" fill="#151210"/>
+  <!-- Items on table: tools, prints -->
+  <!-- Rolled print -->
+  <ellipse cx="280" cy="448" rx="15" ry="30" fill="url(#gold)" fill-opacity="0.3" stroke="url(#gold)" stroke-width="1"/>
+  <!-- Color swatches -->
+  <rect x="360" y="420" width="24" height="30" rx="2" fill="#C41E3A"/>
+  <rect x="390" y="420" width="24" height="30" rx="2" fill="#1E78C4"/>
+  <rect x="420" y="420" width="24" height="30" rx="2" fill="#22AA44"/>
+  <rect x="450" y="420" width="24" height="30" rx="2" fill="#FFD700"/>
+  <!-- Design board on wall -->
+  <rect x="350" y="120" width="500" height="280" rx="4" fill="#0d0c0b" stroke="#2a2a25" stroke-width="2"/>
+  <!-- Pinned items on board -->
+  <rect x="370" y="140" width="120" height="80" rx="2" fill="#12110f" stroke="url(#gold)" stroke-width="0.5"/>
+  <text x="430" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-style="italic" fill="url(#gold)" fill-opacity="0.7">ID</text>
+  <rect x="510" y="140" width="80" height="80" rx="2" fill="#C41E3A" fill-opacity="0.3" stroke="url(#gold)" stroke-width="0.5"/>
+  <rect x="608" y="140" width="100" height="80" rx="2" fill="#1E78C4" fill-opacity="0.2" stroke="url(#gold)" stroke-width="0.5"/>
+  <rect x="370" y="240" width="338" height="120" rx="2" fill="#100f0e" stroke="url(#gold)" stroke-width="0.5"/>
+  <text x="539" y="308" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-style="italic" fill="url(#gold)" fill-opacity="0.5">Atelier Illiko Design</text>
+  <!-- Label -->
+  <text x="600" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#D4AF37" fill-opacity="0.5" letter-spacing="5">NOTRE ATELIER · GRAPHISTES · IMPRIMEURS · TECHNICIENS</text>
+</svg>

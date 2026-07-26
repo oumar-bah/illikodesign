@@ -25,6 +25,7 @@ export const Hero = () => {
           src={IMAGES.hero}
           alt="Atelier d'impression premium Illiko Design"
           className="h-full w-full object-cover"
+          fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />

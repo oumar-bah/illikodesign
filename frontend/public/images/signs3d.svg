@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060406"/>
+      <stop offset="100%" stop-color="#0d0808"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#BF953F"/>
+      <stop offset="50%" stop-color="#FCF6BA"/>
+      <stop offset="100%" stop-color="#B38728"/>
+    </linearGradient>
+    <linearGradient id="sign-body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1f0a"/>
+      <stop offset="100%" stop-color="#1a1206"/>
+    </linearGradient>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <radialGradient id="light-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <!-- Ambient glow -->
+  <ellipse cx="600" cy="350" rx="380" ry="220" fill="url(#light-halo)"/>
+  <!-- 3D sign body - main panel -->
+  <rect x="200" y="220" width="800" height="200" rx="4" fill="url(#sign-body)" stroke="url(#gold)" stroke-width="2"/>
+  <!-- 3D effect depth -->
+  <path d="M200,420 L180,440 L980,440 L1000,420 Z" fill="#0d0a04" stroke="url(#gold)" stroke-width="1" stroke-opacity="0.5"/>
+  <path d="M1000,220 L1000,420 L1020,400 L1020,200 Z" fill="#0f0c05" stroke="url(#gold)" stroke-width="1" stroke-opacity="0.5"/>
+  <!-- Illuminated letters inside sign -->
+  <g filter="url(#glow-strong)">
+    <text x="600" y="345" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="url(#gold)">ENSEIGNES</text>
+  </g>
+  <text x="600" y="345" text-anchor="middle" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="url(#gold)" fill-opacity="0.9">ENSEIGNES</text>
+  <!-- Decorative bolts -->
+  <circle cx="230" cy="250" r="6" fill="url(#gold)" fill-opacity="0.7"/>
+  <circle cx="970" cy="250" r="6" fill="url(#gold)" fill-opacity="0.7"/>
+  <circle cx="230" cy="390" r="6" fill="url(#gold)" fill-opacity="0.7"/>
+  <circle cx="970" cy="390" r="6" fill="url(#gold)" fill-opacity="0.7"/>
+  <!-- Light dots -->
+  <g fill="#FFD700" fill-opacity="0.9">
+    <circle cx="220" cy="320" r="3" filter="url(#glow-strong)"/>
+    <circle cx="980" cy="320" r="3" filter="url(#glow-strong)"/>
+  </g>
+  <!-- Sub text -->
+  <text x="600" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#D4AF37" fill-opacity="0.6" letter-spacing="5">LUMINEUSES · 3D · ACRYLIQUE · SIGNALÉTIQUE</text>
+  <!-- Floor reflection -->
+  <path d="M200,440 L200,490 L1000,490 L1000,440 Z" fill="url(#gold)" fill-opacity="0.04"/>
+</svg>
