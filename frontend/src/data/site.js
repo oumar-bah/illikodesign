@@ -4,6 +4,9 @@ const imagePath = (name) => {
   if (typeof name !== "string" || name.length === 0) {
     throw new Error("Image asset name must be a non-empty string");
   }
+  if (!/^[a-zA-Z0-9._-]+$/.test(name) || name.includes("..")) {
+    throw new Error("Image asset name contains invalid characters");
+  }
   return `${process.env.PUBLIC_URL || ""}/images/${name}`;
 };
 
