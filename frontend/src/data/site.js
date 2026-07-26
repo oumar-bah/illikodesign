@@ -1,7 +1,11 @@
 // Contenu 100% français — Illiko Design
 
-const imagePath = (name) =>
-  `${process.env.PUBLIC_URL || ""}/images/${typeof name === "string" ? name : ""}`;
+const imagePath = (name) => {
+  if (typeof name !== "string" || name.length === 0) {
+    throw new Error("Invalid image asset name");
+  }
+  return `${process.env.PUBLIC_URL || ""}/images/${name}`;
+};
 
 export const IMAGES = {
   hero: imagePath("hero.svg"),
