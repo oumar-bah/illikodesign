@@ -26,7 +26,7 @@ export const NAV_LINKS = [
 export const CONTACT = {
   phone: "+224 611 10 01 60",
   phoneHref: "tel:+224 611 10 01 60",
-  whatsapp: "https://web.whatsapp.com/",
+  whatsapp: ". https://wa.me/224611100160",
   email: "Designilliko.com",
   address: "Hamdanllaye- carrefour",
   hours: "Lun — Sam · 08h30 à 19h00",
