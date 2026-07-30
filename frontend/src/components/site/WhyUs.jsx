@@ -35,7 +35,7 @@ const Counter = ({ value, suffix }) => {
 };
 
 export const WhyUs = () => (
-  <section id="pourquoi" className="relative py-24 md:py-32 border-t border-white/5 bg-[#080808]" data-testid="whyus-section">
+  <section id="pourquoi" className="relative py-24 md:py-32 border-t border-black/10 bg-neutral-950" data-testid="whyus-section">
     <div className="max-w-[1400px] mx-auto px-6 md:px-12">
       <Overline>04 — Pourquoi nous choisir</Overline>
       <Reveal delay={0.1}>

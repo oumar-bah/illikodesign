@@ -20,7 +20,7 @@ export const FloatingActions = () => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.5 }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="h-11 w-11 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-white hover:text-gold transition-colors"
+            className="h-11 w-11 flex items-center justify-center rounded-full bg-white backdrop-blur-md border border-black/10 text-neutral-950 hover:text-gold transition-colors shadow-[0_10px_30px_rgba(15,23,42,0.12)]"
             data-testid="scroll-top-btn"
             aria-label="Remonter"
           >
@@ -31,7 +31,7 @@ export const FloatingActions = () => {
 
       <a
         href={CONTACT.phoneHref}
-        className="group h-14 w-14 flex items-center justify-center rounded-full border border-gold/50 bg-black/60 backdrop-blur-md text-gold hover:bg-gold hover:text-black transition-colors duration-300 shadow-lg"
+        className="group h-14 w-14 flex items-center justify-center rounded-full border border-gold/50 bg-neutral-950 backdrop-blur-md text-gold hover:bg-gold hover:text-black transition-colors duration-300 shadow-lg"
         data-testid="floating-call-btn"
         aria-label="Appeler"
       >

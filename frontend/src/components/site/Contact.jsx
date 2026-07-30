@@ -6,13 +6,13 @@ const SOCIAL_ICONS = { Instagram, Facebook, Linkedin, Music2 };
 
 const InfoRow = ({ icon: Icon, label, value, href, testid }) => {
   const content = (
-    <div className="group flex items-start gap-4 py-5 border-b border-white/10" data-testid={testid}>
+    <div className="group flex items-start gap-4 py-5 border-b border-black/10" data-testid={testid}>
       <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/40 text-gold group-hover:bg-gold group-hover:text-black transition-colors duration-400">
         <Icon className="h-5 w-5" />
       </span>
       <div>
-        <p className="text-xs uppercase tracking-[0.25em] text-white/40">{label}</p>
-        <p className="mt-1 text-white group-hover:text-gold transition-colors duration-300">{value}</p>
+        <p className="text-xs uppercase tracking-[0.25em] text-neutral-500">{label}</p>
+        <p className="mt-1 text-neutral-950 group-hover:text-gold transition-colors duration-300">{value}</p>
       </div>
     </div>
   );
@@ -26,15 +26,15 @@ const InfoRow = ({ icon: Icon, label, value, href, testid }) => {
 };
 
 export const Contact = () => (
-  <section id="contact" className="relative py-24 md:py-32 border-t border-white/5 bg-[#080808]" data-testid="contact-section">
+  <section id="contact" className="relative py-24 md:py-32 border-t border-black/10 bg-white" data-testid="contact-section">
     <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20">
       <div>
         <Overline>08 — Contact</Overline>
         <Reveal delay={0.1}>
-          <h2 className="mt-6 font-serif-display text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.05]">
+          <h2 className="mt-6 font-serif-display text-4xl md:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-[1.05]">
             Passons à <span className="gold-text italic">l'action</span>
           </h2>
-          <p className="mt-6 text-white/55 leading-relaxed max-w-md">
+          <p className="mt-6 text-neutral-700 leading-relaxed max-w-md">
             Notre atelier vous accueille et vous conseille. Écrivez-nous, appelez-nous ou
             passez nous voir.
           </p>
@@ -56,7 +56,7 @@ export const Contact = () => (
                   target="_blank"
                   rel="noreferrer"
                   aria-label={s.label}
-                  className="inline-flex h-12 w-12 items-center justify-center border border-white/15 text-white/70 hover:border-gold hover:text-gold transition-colors duration-300"
+                  className="inline-flex h-12 w-12 items-center justify-center border border-black/10 bg-[#faf7f2] text-neutral-700 hover:border-gold hover:text-gold transition-colors duration-300"
                   data-testid={`social-${s.label.toLowerCase()}`}
                 >
                   <Icon className="h-5 w-5" />
@@ -67,7 +67,7 @@ export const Contact = () => (
         </Reveal>
       </div>
 
-      <Reveal delay={0.2} className="relative min-h-[380px] lg:min-h-full border border-white/10 overflow-hidden">
+      <Reveal delay={0.2} className="relative min-h-[380px] lg:min-h-full border border-black/10 overflow-hidden">
         <iframe
           title="Localisation Illiko Design"
           src={CONTACT.mapEmbed}

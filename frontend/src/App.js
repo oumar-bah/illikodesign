@@ -17,7 +17,7 @@ import { FloatingActions } from "@/components/site/FloatingActions";
 function App() {
   return (
     <ReactLenis root options={{ lerp: 0.09, smoothWheel: true }}>
-      <div className="min-h-screen bg-[#050505] text-white antialiased selection:bg-gold selection:text-black">
+      <div className="min-h-screen bg-[#faf7f2] text-neutral-950 antialiased selection:bg-gold selection:text-black">
         <div className="noise-overlay" aria-hidden="true" />
         <Navbar />
         <main>
@@ -33,7 +33,7 @@ function App() {
         </main>
         <Footer />
         <FloatingActions />
-        <Toaster position="top-center" theme="dark" richColors />
+        <Toaster position="top-center" theme="light" richColors />
       </div>
     </ReactLenis>
   );

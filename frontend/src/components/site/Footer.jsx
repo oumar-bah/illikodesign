@@ -36,10 +36,7 @@ export const Footer = () => (
           <ul className="mt-6 space-y-3">
             {NAV_LINKS.map((l) => (
               <li key={l.href}>
-                <button
-                  onClick={() => scrollTo(l.href)}
-                  className="text-white/55 hover:text-gold transition-colors duration-300"
-                >
+                <button onClick={() => scrollTo(l.href)} className="text-white/55 hover:text-gold transition-colors duration-300">
                   {l.label}
                 </button>
               </li>
@@ -62,7 +59,7 @@ export const Footer = () => (
         <p className="text-white/40 text-sm">
           © {new Date().getFullYear()} Illiko Design. Tous droits réservés.
         </p>
-        <p className="text-white/30 text-sm">Conçu avec exigence — Noir · Or · Blanc</p>
+        <p className="text-white/30 text-sm">Conçu avec exigence — Blanc · Noir · Or</p>
       </div>
     </div>
   </footer>

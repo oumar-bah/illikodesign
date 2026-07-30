@@ -19,7 +19,7 @@ const AboutLine = ({ children, delay }) => (
 );
 
 export const About = () => (
-  <section id="a-propos" className="relative py-24 md:py-32 border-t border-white/5" data-testid="about-section">
+  <section id="a-propos" className="relative py-24 md:py-32 border-t border-black/10" data-testid="about-section">
     <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
       <div className="lg:col-span-4">
         <div className="lg:sticky lg:top-28">
@@ -38,7 +38,7 @@ export const About = () => (
       </div>
 
       <div className="lg:col-span-8 flex flex-col justify-center">
-        <h2 className="font-serif-display text-3xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-white">
+        <h2 className="font-serif-display text-3xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-neutral-950">
           <AboutLine delay={0}>Nous ne faisons pas</AboutLine>
           <AboutLine delay={0.08}>
             <span>qu'</span><span className="gold-text italic">imprimer.</span>
@@ -48,13 +48,13 @@ export const About = () => (
         </h2>
 
         <Reveal delay={0.3} className="mt-10 max-w-2xl">
-          <p className="text-lg md:text-xl text-white/60 leading-relaxed">
-            Depuis plus de dix ans, <span className="text-white">Illiko Design</span> conjugue
+          <p className="text-lg md:text-xl text-neutral-700 leading-relaxed">
+            Depuis plus de dix ans, <span className="text-neutral-950">Illiko Design</span> conjugue
             savoir-faire artisanal et technologie de pointe pour transformer vos idées en objets
             de communication d'exception. De l'enseigne lumineuse au moindre badge, chaque
             réalisation porte notre signature : la précision.
           </p>
-          <p className="mt-6 text-white/50 leading-relaxed">
+          <p className="mt-6 text-neutral-600 leading-relaxed">
             Notre atelier réunit sous un même toit graphistes, imprimeurs et techniciens passionnés,
             pour un accompagnement sur mesure, du premier croquis à la pose finale.
           </p>

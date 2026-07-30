@@ -2,19 +2,19 @@ import { Reveal, Overline } from "./Reveal";
 import { PORTFOLIO } from "../../data/site";
 
 export const Portfolio = () => (
-  <section id="realisations" className="relative py-24 md:py-32 border-t border-white/5" data-testid="portfolio-section">
+  <section id="realisations" className="relative py-24 md:py-32 border-t border-black/10" data-testid="portfolio-section">
     <div className="max-w-[1400px] mx-auto px-6 md:px-12">
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
           <Overline>03 — Nos Réalisations</Overline>
           <Reveal delay={0.1}>
-            <h2 className="mt-6 font-serif-display text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.05]">
+            <h2 className="mt-6 font-serif-display text-4xl md:text-5xl lg:text-6xl text-neutral-950 tracking-tight leading-[1.05]">
               Le travail <span className="gold-text italic">parle</span>
             </h2>
           </Reveal>
         </div>
         <Reveal delay={0.2}>
-          <p className="max-w-sm text-white/55 leading-relaxed">
+          <p className="max-w-sm text-neutral-700 leading-relaxed">
             Une sélection de projets livrés pour des marques exigeantes, où chaque détail est
             pensé pour marquer les esprits.
           </p>
@@ -26,7 +26,7 @@ export const Portfolio = () => (
           <Reveal
             key={item.title}
             delay={(i % 4) * 0.06}
-            className={`group relative overflow-hidden border border-white/10 hover:border-gold/40 transition-colors duration-500 ${item.span}`}
+            className={`group relative overflow-hidden border border-black/10 hover:border-gold/40 transition-colors duration-500 ${item.span}`}
             data-testid={`portfolio-item-${i}`}
           >
             <img

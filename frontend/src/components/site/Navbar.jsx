@@ -25,7 +25,9 @@ export const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
       className={`fixed top-0 inset-x-0 z-50 transition-colors duration-500 ${
-        scrolled ? "bg-black/70 backdrop-blur-xl border-b border-white/10" : "bg-transparent"
+        scrolled
+          ? "bg-white/85 backdrop-blur-xl border-b border-black/10 shadow-[0_10px_40px_rgba(15,23,42,0.08)]"
+          : "bg-transparent"
       }`}
       data-testid="main-navbar"
     >
@@ -36,7 +38,7 @@ export const Navbar = () => {
           data-testid="logo-btn"
         >
           <Sparkles className="h-5 w-5 text-gold" />
-          <span className="font-cinzel text-xl tracking-[0.15em] text-white">
+          <span className={`font-cinzel text-xl tracking-[0.15em] ${scrolled ? "text-neutral-950" : "text-white"}`}>
             ILLIKO<span className="text-gold"> DESIGN</span>
           </span>
         </button>
@@ -46,7 +48,9 @@ export const Navbar = () => {
             <button
               key={l.href}
               onClick={() => go(l.href)}
-              className="text-sm tracking-wide text-white/70 hover:text-gold transition-colors duration-300"
+              className={`text-sm tracking-wide transition-colors duration-300 ${
+                scrolled ? "text-neutral-600 hover:text-neutral-950" : "text-white/75 hover:text-white"
+              }`}
               data-testid={`nav-${l.href.replace("#", "")}`}
             >
               {l.label}
@@ -63,7 +67,7 @@ export const Navbar = () => {
             Demander un devis
           </button>
           <button
-            className="lg:hidden text-white p-2"
+            className={`lg:hidden p-2 ${scrolled ? "text-neutral-950" : "text-white"}`}
             onClick={() => setOpen((o) => !o)}
             data-testid="mobile-menu-toggle"
             aria-label="Menu"
@@ -80,14 +84,14 @@ export const Navbar = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:hidden overflow-hidden bg-black/95 backdrop-blur-xl border-t border-white/10"
+            className="lg:hidden overflow-hidden bg-white/95 backdrop-blur-xl border-t border-black/10"
           >
             <div className="px-6 py-6 flex flex-col gap-1">
               {NAV_LINKS.map((l) => (
                 <button
                   key={l.href}
                   onClick={() => go(l.href)}
-                  className="text-left py-3 text-lg font-serif text-white/80 hover:text-gold border-b border-white/5 transition-colors"
+                  className="text-left py-3 text-lg font-serif text-neutral-800 hover:text-gold border-b border-black/5 transition-colors"
                   data-testid={`mobile-nav-${l.href.replace("#", "")}`}
                 >
                   {l.label}

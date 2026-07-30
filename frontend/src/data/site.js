@@ -1,5 +1,16 @@
 // Contenu 100% français — Illiko Design
 
+const env = process.env;
+const contactPhone = env.REACT_APP_CONTACT_PHONE || "+224 611 10 01 60";
+const contactEmail = env.REACT_APP_CONTACT_EMAIL || "contact@illikodesign.com";
+const contactWhatsapp =
+  env.REACT_APP_CONTACT_WHATSAPP || "https://wa.me/224611100160";
+const contactAddress = env.REACT_APP_CONTACT_ADDRESS || "Hamdalaye — Carrefour";
+const contactHours = env.REACT_APP_CONTACT_HOURS || "Lun — Sam · 08h30 à 19h00";
+const contactMapEmbed =
+  env.REACT_APP_CONTACT_MAP_EMBED ||
+  "https://www.google.com/maps?q=Conakry+Guinee&output=embed";
+
 export const IMAGES = {
   hero: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/d9cef2971e8f6e76a60d34a082904293b2af7c055c03c87a4b152aba29c9861b.jpeg",
   signs3d: "https://static.prod-images.emergentagent.com/jobs/d1c5d63f-7fc1-478b-b2ac-4d2cb2999ce0/images/d57f5738061b791d66b3fb2aab6ec6cd39ef920322a659786c9fb4bcf3784ee0.jpeg",
@@ -24,14 +35,13 @@ export const NAV_LINKS = [
 ];
 
 export const CONTACT = {
-  phone: "+224 611 10 01 60",
-  phoneHref: "tel:+224 611 10 01 60",
-  whatsapp: "https://web.whatsapp.com/",
-  email: "Designilliko.com",
-  address: "Hamdanllaye- carrefour",
-  hours: "Lun — Sam · 08h30 à 19h00",
-  mapEmbed:
-    "https://www.google.com/maps?q=Almadies+Dakar+Senegal&output=embed",
+  phone: contactPhone,
+  phoneHref: `tel:${contactPhone.replace(/\s+/g, "")}`,
+  whatsapp: contactWhatsapp,
+  email: contactEmail,
+  address: contactAddress,
+  hours: contactHours,
+  mapEmbed: contactMapEmbed,
   socials: [
     { label: "Instagram", href: "https://instagram.com", icon: "Instagram" },
     { label: "Facebook", href: "https://facebook.com", icon: "Facebook" },

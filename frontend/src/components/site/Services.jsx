@@ -11,7 +11,7 @@ const ServiceCard = ({ cat, index }) => {
   return (
     <Reveal
       delay={index * 0.06}
-      className={`group relative overflow-hidden border border-white/10 bg-[#0a0a0a] hover:border-gold/50 transition-colors duration-500 min-h-[340px] ${cat.span}`}
+      className={`group relative overflow-hidden border border-black/10 bg-[#0a0a0a] hover:border-gold/50 transition-colors duration-500 min-h-[340px] ${cat.span}`}
     >
       <div className="absolute inset-0">
         <img
@@ -54,19 +54,19 @@ const ServiceCard = ({ cat, index }) => {
 };
 
 export const Services = () => (
-  <section id="services" className="relative py-24 md:py-32 border-t border-white/5" data-testid="services-section">
+  <section id="services" className="relative py-24 md:py-32 border-t border-black/10 bg-white" data-testid="services-section">
     <div className="max-w-[1400px] mx-auto px-6 md:px-12">
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
           <Overline>02 — Nos Services</Overline>
           <Reveal delay={0.1}>
-            <h2 className="mt-6 font-serif-display text-4xl md:text-5xl lg:text-6xl text-white tracking-tight max-w-2xl leading-[1.05]">
+            <h2 className="mt-6 font-serif-display text-4xl md:text-5xl lg:text-6xl text-neutral-950 tracking-tight max-w-2xl leading-[1.05]">
               Un savoir-faire <span className="gold-text italic">complet</span>
             </h2>
           </Reveal>
         </div>
         <Reveal delay={0.2}>
-          <p className="max-w-sm text-white/55 leading-relaxed">
+          <p className="max-w-sm text-neutral-700 leading-relaxed">
             Six pôles d'expertise, plus de trente prestations, une seule exigence : l'excellence
             à chaque étape de votre projet.
           </p>
@@ -80,10 +80,10 @@ export const Services = () => (
       </div>
     </div>
 
-    <div className="mt-16 py-5 border-y border-white/10 bg-[#080808]">
+    <div className="mt-16 py-5 border-y border-black/10 bg-[#f5efe5]">
       <Marquee gradient={false} speed={45} autoFill>
         {ALL_SERVICES.map((s) => (
-          <span key={s} className="mx-6 inline-flex items-center gap-6 text-white/45">
+          <span key={s} className="mx-6 inline-flex items-center gap-6 text-neutral-600">
             <span className="font-serif-display text-xl md:text-2xl italic whitespace-nowrap">{s}</span>
             <Gem className="h-3.5 w-3.5 text-gold/70" />
           </span>
