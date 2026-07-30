@@ -62,7 +62,7 @@ export const Footer = () => (
         <p className="text-white/40 text-sm">
           © {new Date().getFullYear()} Illiko Design. Tous droits réservés.
         </p>
-        <p className="text-white/30 text-sm">Conçu avec exigence — Noir · Or · Blanc</p>
+        <p className="text-white/30 text-sm">Conçu par illiko design </p>
       </div>
     </div>
   </footer>
